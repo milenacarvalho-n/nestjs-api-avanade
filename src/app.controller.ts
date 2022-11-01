@@ -2,7 +2,7 @@ import { Controller, Get } from '@nestjs/common';
 import { AppService } from './app.service';
 
 // sem parâmetro, pega na pasta raiz do projeto
-@Controller('/users')
+@Controller()
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
