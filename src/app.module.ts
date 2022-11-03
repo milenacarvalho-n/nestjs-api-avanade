@@ -8,6 +8,7 @@ import { OrdersModule } from './orders/orders.module';
 import { EmailModule } from './email/email.module';
 
 // todo os modulos precisam estar referenciados no app.module.ts
+// acionado quando o localhost:3000 é acessado
 
 @Module({
   imports: [AuthModule, UsersModule, ProductsModule, OrdersModule, EmailModule],
