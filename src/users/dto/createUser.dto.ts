@@ -7,6 +7,7 @@ import {
   } from 'class-validator';
   
   export class CreateUserDTO {
+    // os decorators são responsáveis por validar os dados que estão sendo enviados
     @IsString()
     @IsNotEmpty()
     name: string;

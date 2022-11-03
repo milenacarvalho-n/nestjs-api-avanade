@@ -19,6 +19,7 @@ import {
   
     // criar
     @Post()
+    // @body é um decorator e captura as informações do body e armazena em req (request)
     create(@Body() req: CreateUserDTO) {
       return this.usersService.create(req);
     }
